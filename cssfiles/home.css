@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background : linear-gradient(white,whitesmoke);
+    height: 100vh;
+    width: 100%;
+}
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(250, 254, 255, 0.9);
+    align-items: center;
+    box-shadow: 10px 1px 20px 1px rgb(15, 15, 15);
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    padding: 0 20px;
+}
+.container nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.container nav ul li {
+    margin: 0 20px;
+    list-style: none;
+}
+.logo {
+    padding: 0 20px;
+}
+.contact {
+    padding: 0 20px;
+}
+.container nav ul li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.1s ease-in-out;
+    
+}
+.container nav ul li a:hover {
+    transform: scale(1.05);
+}
+.logo a {
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact button {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    background-color: #333;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.contact button:hover {
+    background-color: #444;
+    box-shadow: 1px 1px 10px 5px #333;
+}
+.contact button a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.background {
+    background-image: url(../homebackground1.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s ease;
+}
+.background:hover {
+    background-size: 120%;
+    filter: brightness(80%);
+}
+.backgroundtext {
+    padding: 15px;
+    color: whitesmoke;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.backgroundtext a {
+    text-shadow: 0px 0px 80px rgba(0,0,0,1),
+}
+.backgroundbutton button {
+    padding: 12px 20px;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.backgroundbutton button a{
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+.backgroundbutton button:hover {
+    background-color: #444;
+    border: 2px solid #444;
+}
+.backgroundbutton button a:hover {
+    color: whitesmoke;
+}
+.mostsold {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.pod1 {
+    background-color: whitesmoke;
+    height: 80%;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}   
+.pod2 {
+    background-color: whitesmoke;
+    height: 80%;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+.pod3 {
+    background-color: whitesmoke;
+    height: 80%;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.pod1 img {
+    box-shadow: 0px 5px 5px 0px rgba(1,1,1,10%);
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+}
+.pod2 img {
+    box-shadow: 1px 1px 10px 1px rgba(1,1,1,10%);
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+}
+.pod3 img {
+    box-shadow: 1px 1px 10px 1px rgba(1,1,1,10%);
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+}
+.aboutus {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text-aboutus {
+    padding: 30px;
+}
+.text-aboutus h2 {
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.text-aboutus p {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.aboutus-images {
+    display: inline-block;
+}
+.contactus {
+    background-color: rgb(210, 210, 180);
+    width: 100%;
+    height: 600px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+.formimages { 
+    position: absolute;
+    left: 0;
+    background-position: left;
+    background-image: url(../contactusbackground1.jpg);
+    height: 100%;
+    overflow: hidden;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1.5);
+}
+form input {
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 2px solid black;
+    width: 180%;
+    margin-bottom: 10px;
+}
+form button {
+    background-color: black;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+form button a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+form button:hover {
+    background-color: #333;
+    border: 2px solid #333;
+}
+footer {
+    background-color: black;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p {
+    color: whitesmoke;
+    font-weight: 500;
+    
+
+}
+@media (max-width:750px) {
+    .container nav {
+        height: 90px;
+    }
+    .container nav ul {
+        flex-wrap: wrap;
+        
+    }
+}
+
+

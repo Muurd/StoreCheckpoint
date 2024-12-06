@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    backdrop-filter: blur(5px);
+}
+.container {
+    width: 80%;
+    height: 80%;
+    background-image: url(../background2.jpg);
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: 10px 10px 50px 2px #333;
+}
+.container nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    
+}
+.container nav ul {
+    display: flex;
+    align-items: center;
+}
+.container nav ul li {
+    margin: 0 20px;
+    list-style: none;
+}
+.container nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+.container nav ul li a:hover {
+    transform: scale(1.1);
+    color: rgb(198, 255, 255);
+}
+.container nav button {
+    background-color: rgb(198, 255, 255);
+    border: 2px solid rgb(198, 255, 255);
+    border-radius: 12px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.container nav button a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.container nav button:hover {
+    transform: scale(1.2);
+    background-color:rgb(161, 255, 255) ;
+}
+.content {
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text {
+    font-size: 20px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: 700;
+}
+@media (max-width:750px) {
+    .text {
+        font-size: 16px;
+    }
+    .container nav ul li a {
+        font-size: 10px;
+    }
+}
+@media (max-width:550px) {
+    .container nav ul {
+        flex-wrap: wrap;
+    }
+}
